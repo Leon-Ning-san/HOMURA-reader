@@ -34,7 +34,8 @@ const SECTION_OF = {
 // GitHub 网页直接改 README 会生成英文提交信息；发布日志里统一折叠成中文。
 const SUBJECT_ALIASES = new Map([
   ['Update README.md', 'docs(readme): 同步更新中文 README'],
-  ['Update README.en.md', 'docs(readme): 同步更新英文 README']
+  ['Update README.en.md', 'docs(readme): 同步更新英文 README'],
+  ['Update README.ja.md', 'docs(readme): 同步更新日文 README']
 ]);
 
 function git(args) {

@@ -4,7 +4,8 @@
   <p><b>本地漫画与轻小说阅读器</b></p>
   <p>
     <a href="README.md">简体中文</a> ·
-    <a href="README.en.md">English</a>
+    <a href="README.en.md">English</a> ·
+    <a href="README.ja.md">日本語</a>
   </p>
   <p>
     <a href="https://github.com/Leon-Ning-san/HomuraReader/releases/latest">

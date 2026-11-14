@@ -4,7 +4,8 @@
   <p><b>A local-first ACGN reader</b></p>
   <p>
     <a href="README.en.md">English</a> ·
-    <a href="README.md">简体中文</a>
+    <a href="README.md">简体中文</a> ·
+    <a href="README.ja.md">日本語</a>
   </p>
   <p>
     <a href="https://github.com/Leon-Ning-san/HomuraReader/releases/latest">
