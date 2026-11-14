@@ -1,18 +1,18 @@
-[简体中文](README.md) | [English](README.en.md)STAR喵STAR喵！！！🐱🐱🐱
+<h1>HOMURA</h1>
 <div align="center">
   <img src="https://github.com/user-attachments/assets/818e7aba-f12a-49e1-8640-8852cb852b8b" width="180" alt="HOMURA" />
-  <h1>HOMURA</h1>
+
+  [简体中文](README.md) | [English](README.en.md)<br>STAR喵STAR喵！！！🐱🐱🐱
+  
+## 关于项目
+
   <p><b>本地漫画与轻小说阅读器</b></p>
 <p align="center">
   <em>Stories are found things, like fossils in the ground.</em><br>
-  <em>故事是埋在地下的宝藏，静待有心人拾起。</em><br>
   <sub>— Stephen King</sub>
 </p>
   <img src="https://github.com/user-attachments/assets/049e7a11-e0af-4a94-a77e-8f8c72cb50e7" width="160" alt="HOMURA 动图" />
 </div>
-
-
-> 本鱼只负责把书塞进你的本地书架；上传云端那种事，想都别想。🐋
 
 HOMURA 是一个**本地优先**的阅读器：漫画、轻小说、PDF 和图集导入后即可阅读，解析、分页与渲染全部在本机完成，书籍内容不会上传。桌面端使用 Tauri 2 打包，同一套前端也提供 Android 构建。
 
