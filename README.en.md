@@ -1,14 +1,37 @@
-**English** | [简体中文](README.md)STAR MEOW STAR MEOW!!! GIVE ME STAR🐱🐱🐱
 <div align="center">
   <img src="https://github.com/user-attachments/assets/818e7aba-f12a-49e1-8640-8852cb852b8b" width="180" alt="HOMURA" />
   <h1>HOMURA</h1>
-  <p><b>A local manga & light-novel reader</b></p>
-  <p><i>**Stories are found things, like fossils in the ground. — Stephen Hawking**</i></p>
+  <p><b>A local-first ACGN reader</b></p>
+  <p>
+    <a href="README.en.md">English</a> ·
+    <a href="README.md">简体中文</a>
+  </p>
+  <p>
+    <a href="https://github.com/Leon-Ning-san/HomuraReader/releases/latest">
+      <img alt="Latest release" src="https://img.shields.io/github/v/release/Leon-Ning-san/HomuraReader">
+    </a>
+    <a href="LICENSE">
+      <img alt="License" src="https://img.shields.io/github/license/Leon-Ning-san/HomuraReader">
+    </a>
+    <a href="https://github.com/Leon-Ning-san/HomuraReader/releases">
+      <img alt="Platform" src="https://img.shields.io/badge/platform-Android%20%7C%20Windows%20%7C%20macOS%20%7C%20Linux-555">
+    </a>
+  </p>
+  <p>
+    <a href="https://github.com/Leon-Ning-san/HomuraReader/stargazers">
+      <sub>STAR MEOW STAR MEOW!!! GIVE ME STAR 🐱🐱🐱</sub>
+    </a>
+  </p>
+  <p>
+    <em>Stories are found things, like fossils in the ground.</em><br>
+    <sub>— Stephen King</sub>
+  </p>
   <img src="https://github.com/user-attachments/assets/049e7a11-e0af-4a94-a77e-8f8c72cb50e7" width="160" alt="HOMURA animation" />
 </div>
 
-
 > This fish only loads books into your local shelf — don't even think about uploading to the cloud. 🐋
+
+## About
 
 HOMURA is a **local-first** reader: import manga, light novels, PDFs and image galleries and read them right away. Parsing, pagination and rendering all happen on your machine — book content is never uploaded. The desktop app is packaged with Tauri 2, and the same frontend also ships an Android build.
 

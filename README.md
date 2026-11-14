@@ -1,18 +1,38 @@
-<h1>HOMURA</h1>
 <div align="center">
   <img src="https://github.com/user-attachments/assets/818e7aba-f12a-49e1-8640-8852cb852b8b" width="180" alt="HOMURA" />
-
-  [简体中文](README.md) | [English](README.en.md)<br>STAR喵STAR喵！！！🐱🐱🐱
-  
-## 关于项目
-
+  <h1>HOMURA</h1>
   <p><b>本地漫画与轻小说阅读器</b></p>
-<p align="center">
-  <em>Stories are found things, like fossils in the ground.</em><br>
-  <sub>— Stephen King</sub>
-</p>
+  <p>
+    <a href="README.md">简体中文</a> ·
+    <a href="README.en.md">English</a>
+  </p>
+  <p>
+    <a href="https://github.com/Leon-Ning-san/HomuraReader/releases/latest">
+      <img alt="最新版本" src="https://img.shields.io/github/v/release/Leon-Ning-san/HomuraReader">
+    </a>
+    <a href="LICENSE">
+      <img alt="许可证" src="https://img.shields.io/github/license/Leon-Ning-san/HomuraReader">
+    </a>
+    <a href="https://github.com/Leon-Ning-san/HomuraReader/releases">
+      <img alt="支持平台" src="https://img.shields.io/badge/platform-Android%20%7C%20Windows%20%7C%20macOS%20%7C%20Linux-555">
+    </a>
+  </p>
+  <p>
+    <a href="https://github.com/Leon-Ning-san/HomuraReader/stargazers">
+      <sub>STAR 喵 STAR 喵！！！🐱🐱🐱</sub>
+    </a>
+  </p>
+  <p>
+    <em>Stories are found things, like fossils in the ground.</em><br>
+    <sub>故事是埋在地下的宝藏，静待有心人拾起。</sub><br>
+    <sub>— Stephen King</sub>
+  </p>
   <img src="https://github.com/user-attachments/assets/049e7a11-e0af-4a94-a77e-8f8c72cb50e7" width="160" alt="HOMURA 动图" />
 </div>
+
+> 本鱼只负责把书塞进你的本地书架；上传云端那种事，想都别想。🐋
+
+## 关于项目
 
 HOMURA 是一个**本地优先**的阅读器：漫画、轻小说、PDF 和图集导入后即可阅读，解析、分页与渲染全部在本机完成，书籍内容不会上传。桌面端使用 Tauri 2 打包，同一套前端也提供 Android 构建。
 
