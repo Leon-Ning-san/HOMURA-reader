@@ -31,6 +31,12 @@ const SECTION_OF = {
   revert: 'misc'
 };
 
+// GitHub 网页直接改 README 会生成英文提交信息；发布日志里统一折叠成中文。
+const SUBJECT_ALIASES = new Map([
+  ['Update README.md', 'docs(readme): 同步更新中文 README'],
+  ['Update README.en.md', 'docs(readme): 同步更新英文 README']
+]);
+
 function git(args) {
   return execFileSync('git', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
 }
@@ -51,16 +57,20 @@ if (previousTag) {
     .filter(Boolean);
 
   const groups = new Map(SECTIONS.map(([key]) => [key, []]));
+  const seen = new Set();
 
   for (const line of lines) {
     const tab = line.indexOf('\t');
     const hash = line.slice(0, tab);
-    const subject = line.slice(tab + 1);
+    const subject = SUBJECT_ALIASES.get(line.slice(tab + 1)) || line.slice(tab + 1);
     // 发版提交本身不算更新内容
     if (/^chore\(release\)/i.test(subject)) continue;
     const match = subject.match(/^(\w+)(?:\(([^)]+)\))?!?:\s*(.+)$/);
     const section = SECTION_OF[match ? match[1].toLowerCase() : ''] || 'misc';
     const desc = match ? match[3] : subject;
+    const entryKey = `${section}:${desc}`;
+    if (seen.has(entryKey)) continue;
+    seen.add(entryKey);
     groups.get(section).push(`- ${desc}（[${hash}](${server}/${repo}/commit/${hash})）`);
   }
 
