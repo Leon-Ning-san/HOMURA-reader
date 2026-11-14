@@ -8,12 +8,12 @@
 
 | 项目 | 当前状态 |
 | --- | --- |
-| 发布版本 | `2.2.7`，`package.json`、`Cargo.toml`、`tauri.conf.json` 三处版本一致 |
+| 发布版本 | `2.2.8`，`package.json`、`Cargo.toml`、`tauri.conf.json` 三处版本一致 |
 | 桌面平台 | macOS / Windows / Linux |
 | 移动平台 | Android arm64-v8a / armeabi-v7a APK |
 | 核心链路 | 导入、本地存档、恢复、分页/滚动阅读、目录跳转、进度记忆、一级书库、收藏、自定义封面、导入进度与失败重试、应用内更新均可用 |
 | 尚未完成 | 标签功能尚未实现；书签功能尚未实现 |
-| 质量保障 | 有 `node:test` + jsdom 单元测试（303 条）与 `vue-tsc` 类型检查；没有 ESLint 或 E2E，关键阅读流程仍需手动回归 |
+| 质量保障 | 有 `node:test` + jsdom 单元测试（304 条）与 `vue-tsc` 类型检查；没有 ESLint 或 E2E，关键阅读流程仍需手动回归 |
 | 许可 | MIT，完整条款见 [`LICENSE`](../LICENSE) |
 
 ## 功能概览
@@ -157,7 +157,7 @@ npm run build      # tauri build，Tauri 会先构建前端再打包安装包
 
 | 命令 | 作用 |
 | --- | --- |
-| `npm test` | `node --experimental-strip-types --test tests/*.test.mjs`，303 条用例，覆盖解析、书名排序、同名识别、书库归属、目录分组、阅读手势、翻页几何、抽屉拖动、多语言与阅读模式恢复 |
+| `npm test` | `node --experimental-strip-types --test tests/*.test.mjs`，304 条用例，覆盖解析、书名排序、同名识别、书库归属、目录分组、阅读手势、翻页几何、抽屉拖动、多语言与阅读模式恢复 |
 | `npm run typecheck` | `vue-tsc --noEmit`，类型检查（当前 0 报错） |
 | `npm run dev:vite` | 只启动 Vite 开发服务器，端口固定为 `5173`，支持 HMR |
 | `npm run build:vite` | `check:dark-glow` + 构建前端到 `dist/`，是最快的构建验证 |
@@ -194,7 +194,7 @@ sudo apt-get install libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev pat
 开发和代码约束以仓库根目录的 [`AGENTS.md`](../AGENTS.md) 为准。提交前至少运行：
 
 ```bash
-npm test          # 单元测试（303 条）
+npm test          # 单元测试（304 条）
 npm run typecheck # vue-tsc 类型检查
 npm run build:vite
 ```
@@ -221,4 +221,4 @@ CI 只在推送 `v*` 标签或手动触发 `workflow_dispatch` 时运行，不�
 - 目录可以跳转，但目录状态不保存；书签功能尚未实现。
 - 书架搜索只匹配书名与书库名，不支持作者搜索或标签筛选。
 - macOS 安装包尚未签名/公证，首次启动需要手动放行。
-- 项目提供书名排序、同名识别、书库归属、目录分组、手势判定、翻页几何、抽屉双档拖动、多语言词典和阅读模式恢复等单元测试（`npm test`，303 条），配合 `npm run typecheck` 做类型检查；但没有 E2E、覆盖不到完整阅读流程，也没有 ESLint，改动后仍需执行构建并手动回归关键阅读流程。
+- 项目提供书名排序、同名识别、书库归属、目录分组、手势判定、翻页几何、抽屉双档拖动、多语言词典和阅读模式恢复等单元测试（`npm test`，304 条），配合 `npm run typecheck` 做类型检查；但没有 E2E、覆盖不到完整阅读流程，也没有 ESLint，改动后仍需执行构建并手动回归关键阅读流程。

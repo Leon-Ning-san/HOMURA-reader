@@ -16,7 +16,7 @@
 
 HOMURA 是一个**本地优先**的阅读器：漫画、轻小说、PDF 和图集导入后即可阅读，解析、分页与渲染全部在本机完成，书籍内容不会上传。桌面端使用 Tauri 2 打包，同一套前端也提供 Android 构建。
 
-- 当前版本：**2.2.7**
+- 当前版本：**2.2.8**
 - 技术栈：Vue 3 + Pinia + Vite 6 + Tauri 2 + TypeScript
 - 仓库：[Leon-Ning-san/HomuraReader](https://github.com/Leon-Ning-san/HomuraReader)
 - 下载：[GitHub Releases](https://github.com/Leon-Ning-san/HomuraReader/releases)
@@ -67,13 +67,13 @@ npm run dev        # tauri dev，自动执行 Vite 前置
 npm run build      # tauri build，先构建前端再打包安装包
 ```
 
-提交前建议运行 `npm test`（303 条单元测试）、`npm run typecheck`、`npm run build:vite`。
+提交前建议运行 `npm test`（304 条单元测试）、`npm run typecheck`、`npm run build:vite`。
 
 ## 项目现状与限制
 
-- 版本 `2.2.7`，桌面（macOS / Windows / Linux）与 Android（arm64 / armv7）均可构建；核心阅读链路完整可用。
+- 版本 `2.2.8`，桌面（macOS / Windows / Linux）与 Android（arm64 / armv7）均可构建；核心阅读链路完整可用。
 - 标签与书签功能尚未实现；不支持 DRM、AZW3 / KF8、加密 PDF，PDF 不可重排。
-- 有 303 条单元测试与类型检查，但没有 E2E、没有 ESLint，关键流程仍需手动回归。
+- 有 304 条单元测试与类型检查，但没有 E2E、没有 ESLint，关键流程仍需手动回归。
 - macOS 安装包尚未签名，首次启动需手动放行。
 - 本项目以 **MIT License** 授权，条款见 [`LICENSE`](LICENSE)。
 
@@ -96,4 +96,4 @@ npm run build      # tauri build，先构建前端再打包安装包
 
 ---
 
-*README 按 v2.2.7 整理；详细说明见 [`docs/features.md`](docs/features.md)。功能状态以代码为准；本鱼写完先去吃小鱼干了。* 🐋
+*README 按 v2.2.8 整理；详细说明见 [`docs/features.md`](docs/features.md)。功能状态以代码为准；本鱼写完先去吃小鱼干了。* 🐋
